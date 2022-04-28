@@ -1,1 +1,1 @@
-Reference code for working with Redux & Typescript. Cheers :)
+Reference code for working with Redux & TypeScript. Cheers :)
