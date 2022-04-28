@@ -8,9 +8,8 @@ export const searchRepositories = (searchTerm: string) => {
     dispatch({ type: ActionType.SEARCH_REPOSITORIES });
     try {
       const { data } = await axios.get(
-        `https://registry.npmjs.org/-/v1/search/${searchTerm}`
+        `https://registry.npmjs.org/-/v1/search?text=${searchTerm}`
       );
-
       const names = data.objects.map((item: any) => {
         return item.package.name;
       });
